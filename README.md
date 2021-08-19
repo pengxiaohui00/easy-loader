@@ -42,7 +42,5 @@ module.exports = '这里是 source 模块';
 // applySomeModule.js
 var source = require('example.js'); 
 console.log(source); // 这里是 source 模块
-写完后我们要怎么在本地验证呢？下面我们来写个简单的demo进行验证。
 
-d
 
