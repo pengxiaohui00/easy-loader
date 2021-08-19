@@ -1,21 +1,26 @@
+
 {
-  "name": "easy-xml-loader",
-  "version": "1.0.3",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "webpack-dev-server"
-  },
-  "keywords": [],
-  "author": "xiaohui",
-  "license": "MIT",
-  "dependencies": {
-    "loader-utils": "^1.2.3",
-    "webpack": "^4.30.0",
-    "webpack-dev-server": "^3.3.1",
-    "xml2js": "^0.4.19"
-  },
-  "devDependencies": {
-    "webpack-cli": "^3.3.1"
+    "name": "easy-xml-loader",
+    "version": "1.0.2",
+    "description": "A webpack module to load XML files.",
+    "main": "index.js",
+    "scripts": {
+      "dev": "webpack-dev-server"
+    },
+    "keywords": [
+        "webpack",
+        "loader",
+        "xml"
+    ],
+    "author": "xiaohui",
+    "license": "MIT",
+    "dependencies": {
+      "loader-utils": "^1.2.3",
+      "webpack": "^4.30.0",
+      "webpack-dev-server": "^3.3.1",
+      "xml2js": "^0.4.19"
+    },
+    "devDependencies": {
+      "webpack-cli": "^3.3.1"
+    }
   }
-}

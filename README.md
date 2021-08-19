@@ -1,4 +1,41 @@
 
+# Webpack XML loader
+
+A Webpack plugin for loading XML files.
+
+## Installation
+
+Install via npm:
+
+```
+npm install --save easy-xml-loader
+```
+
+## Usage
+
+You can require XML data like this:
+
+``` javascript
+var data = require('xml!./data.xml');
+// => returns data.xml content as json-parsed object
+
+var data = require('xml?explicitChildren=true!./data.xml');
+// => returns data.xml content as json-parsed object and put child elements to separate properties
+```
+
+The loader will translate the ```data.xml``` file into a JSON Object. [node-xml2js processors](https://github.com/Leonidas-from-XIV/node-xml2js#options) are supported via query syntax.
+
+#### Usage with webpack.config
+
+To require XML files like this: ```require('data.xml')``` , you can add the xml-loader to your webpack config:
+
+``` javascript
+module : {
+  loaders : [
+    { test: /\.xml$/, loader: 'easy-xml-loader' } // will load all .xml files with xml-loader by default
+  ]
+}
+```
 1、背景
 首先我们来看一下为什么需要loader，以及他能干什么?
 webpack 只能理解 JavaScript 和 JSON 文件。loader 让 webpack 能够去处理其他类型的文件，并将它们转换为有效模块，以供应用程序使用，以及被添加到依赖图中。
