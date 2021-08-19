@@ -1,6 +1,6 @@
 {
   "name": "easy-xml-loader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A webpack module to load XML files.",
   "main": "index.js",
   "scripts": {
